@@ -16,6 +16,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="ToITypedDataObject()">
 <meta name="keywords" content="GetDataPresent()">
+<meta name="keywords" content="TryGetData()">
 <meta name="keywords" content="GetData()">
 <meta name="keywords" content="GetFormats()">
 <meta name="keywords" content="SetData()">
@@ -32,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":9,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -314,6 +315,28 @@ implements <a href="../../system/windows/ITypedDataObject.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ITypedDataObjectImplementation.html#ToITypedDataObject-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToITypedDataObject</a></span>(<a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../system/windows/ITypedDataObject.html" title="interface in system.windows"><code>ITypedDataObject</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ITypedDataObjectImplementation.html#TryGetData-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></span>(<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ITypedDataObjectImplementation.html#TryGetData-java.lang.String-boolean-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></span>(java.lang.String&nbsp;format,
+          boolean&nbsp;autoConvert,
+          <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ITypedDataObjectImplementation.html#TryGetData-java.lang.String-system.Func_2-boolean-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></span>(java.lang.String&nbsp;format,
+          <a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;resolver,
+          boolean&nbsp;autoConvert,
+          <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ITypedDataObjectImplementation.html#TryGetData-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></span>(java.lang.String&nbsp;format,
+          <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -751,7 +774,7 @@ implements <a href="../../system/windows/ITypedDataObject.html" title="interface
 <a name="ToITypedDataObject-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ToITypedDataObject</h4>
 <pre>public static&nbsp;<a href="../../system/windows/ITypedDataObject.html" title="interface in system.windows">ITypedDataObject</a>&nbsp;ToITypedDataObject(<a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)
@@ -766,6 +789,76 @@ implements <a href="../../system/windows/ITypedDataObject.html" title="interface
 <dd><a href="../../system/windows/ITypedDataObject.html" title="interface in system.windows"><code>ITypedDataObject</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="TryGetData-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TryGetData</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;boolean&nbsp;TryGetData(<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)
+                                                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../system/windows/ITypedDataObject.html#TryGetData-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/windows/ITypedDataObject.html" title="interface in system.windows">ITypedDataObject</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="TryGetData-java.lang.String-boolean-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TryGetData</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;boolean&nbsp;TryGetData(java.lang.String&nbsp;format,
+                                                          boolean&nbsp;autoConvert,
+                                                          <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)
+                                                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../system/windows/ITypedDataObject.html#TryGetData-java.lang.String-boolean-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/windows/ITypedDataObject.html" title="interface in system.windows">ITypedDataObject</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="TryGetData-java.lang.String-system.Func_2-boolean-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TryGetData</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;boolean&nbsp;TryGetData(java.lang.String&nbsp;format,
+                                                          <a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;resolver,
+                                                          boolean&nbsp;autoConvert,
+                                                          <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)
+                                                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../system/windows/ITypedDataObject.html#TryGetData-java.lang.String-system.Func_2-boolean-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/windows/ITypedDataObject.html" title="interface in system.windows">ITypedDataObject</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="TryGetData-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TryGetData</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;boolean&nbsp;TryGetData(java.lang.String&nbsp;format,
+                                                          <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)
+                                                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../system/windows/ITypedDataObject.html#TryGetData-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/windows/ITypedDataObject.html" title="interface in system.windows">ITypedDataObject</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

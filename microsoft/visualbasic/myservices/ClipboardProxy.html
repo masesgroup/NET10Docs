@@ -21,6 +21,7 @@
 <meta name="keywords" content="ContainsFileDropList()">
 <meta name="keywords" content="ContainsImage()">
 <meta name="keywords" content="ContainsText()">
+<meta name="keywords" content="TryGetData()">
 <meta name="keywords" content="GetFileDropList()">
 <meta name="keywords" content="GetImage()">
 <meta name="keywords" content="GetAudioStream()">
@@ -30,6 +31,7 @@
 <meta name="keywords" content="Clear()">
 <meta name="keywords" content="SetAudio()">
 <meta name="keywords" content="SetData()">
+<meta name="keywords" content="SetDataAsJson()">
 <meta name="keywords" content="SetDataObject()">
 <meta name="keywords" content="SetFileDropList()">
 <meta name="keywords" content="SetImage()">
@@ -47,7 +49,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -352,29 +354,45 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
        <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;data)</code>&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#SetDataObject-system.windows.forms.DataObject-">SetDataObject</a></span>(<a href="../../../system/windows/forms/DataObject.html" title="class in system.windows.forms">DataObject</a>&nbsp;data)</code>&nbsp;</td>
+<td class="colFirst"><code>&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#SetDataAsJson-java.lang.String-T-">SetDataAsJson</a></span>(java.lang.String&nbsp;format,
+             T&nbsp;data)</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#SetFileDropList-system.collections.specialized.StringCollection-">SetFileDropList</a></span>(<a href="../../../system/collections/specialized/StringCollection.html" title="class in system.collections.specialized">StringCollection</a>&nbsp;filePaths)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#SetDataObject-system.windows.forms.DataObject-">SetDataObject</a></span>(<a href="../../../system/windows/forms/DataObject.html" title="class in system.windows.forms">DataObject</a>&nbsp;data)</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#SetImage-system.drawing.Image-">SetImage</a></span>(<a href="../../../system/drawing/Image.html" title="class in system.drawing">Image</a>&nbsp;image)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#SetFileDropList-system.collections.specialized.StringCollection-">SetFileDropList</a></span>(<a href="../../../system/collections/specialized/StringCollection.html" title="class in system.collections.specialized">StringCollection</a>&nbsp;filePaths)</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#SetImage-system.drawing.Image-">SetImage</a></span>(<a href="../../../system/drawing/Image.html" title="class in system.drawing">Image</a>&nbsp;image)</code>&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#SetText-java.lang.String-">SetText</a></span>(java.lang.String&nbsp;text)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#SetText-java.lang.String-">SetText</a></span>(java.lang.String&nbsp;text)</code>&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#SetText-java.lang.String-system.windows.forms.TextDataFormat-">SetText</a></span>(java.lang.String&nbsp;text,
        <a href="../../../system/windows/forms/TextDataFormat.html" title="class in system.windows.forms">TextDataFormat</a>&nbsp;format)</code>&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#TryGetData-java.lang.String-system.Func_2-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></span>(java.lang.String&nbsp;format,
+          <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;resolver,
+          <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)</code>&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/visualbasic/myservices/ClipboardProxy.html#TryGetData-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></span>(java.lang.String&nbsp;format,
+          <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -1102,6 +1120,39 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="SetDataAsJson-java.lang.String-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
+<!--   -->
+</a><a name="SetDataAsJson-java.lang.String-T-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetDataAsJson</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;SetDataAsJson(java.lang.String&nbsp;format,
+                                                          T&nbsp;data)
+                                                   throws java.lang.Throwable,
+                                                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                          <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                          <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                          <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                          <a href="../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="SetDataObject-system.windows.forms.DataObject-">
 <!--   -->
 </a>
@@ -1236,7 +1287,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <a name="SetText-java.lang.String-system.windows.forms.TextDataFormat-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>SetText</h4>
 <pre>public&nbsp;void&nbsp;SetText(java.lang.String&nbsp;text,
@@ -1268,6 +1319,71 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../../system/componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
+<dd><code><a href="../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="TryGetData-java.lang.String-system.Func_2-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TryGetData</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;boolean&nbsp;TryGetData(java.lang.String&nbsp;format,
+                                                          <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;resolver,
+                                                          <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)
+                                                   throws java.lang.Throwable,
+                                                          <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                          <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                          <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                          <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                          <a href="../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="TryGetData-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TryGetData</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;boolean&nbsp;TryGetData(java.lang.String&nbsp;format,
+                                                          <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)
+                                                   throws java.lang.Throwable,
+                                                          <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                          <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                          <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                          <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                          <a href="../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
 </li>
